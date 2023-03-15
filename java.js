@@ -5,21 +5,25 @@ function inserir(){
     let cidade = document.getElementById('cidade').value
    valor_cidade.push(cidade)
     console.log(valor_cidade)
-    res.InnerHTML = valor_cidade
+    res.innerHTML = valor_cidade
 }
 
 function insert_inicio(){
     let cidade = document.getElementById('cidade').value
     valor_cidade.unshift(cidade)
-    res.InnerHTML = valor_cidade
-
-
-
+    res.innerHTML = valor_cidade
 }
 
 function excluir(){
-    let cidade = document.getElementById('cidade').value
-   valor_cidade.pop(cidade)
+   valor_cidade.pop()
     console.log(valor_cidade)
-    res.InnerHTML = valor_cidade
+    res.innerHTML = valor_cidade
+}
+
+
+function excluir_final(){
+    
+    valor_cidade.shift()
+     console.log(valor_cidade)
+     res.innerHTML = valor_cidade
 }
